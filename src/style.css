@@ -3,3 +3,17 @@
 body{
     background: white;
 }
+
+.centrar{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+p{
+    font-size: x-large;
+    font-weight: bold;
+}
+
