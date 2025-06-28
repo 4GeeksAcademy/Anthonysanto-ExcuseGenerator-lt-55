@@ -12,16 +12,16 @@ let what = ['my homework', 'my phone', 'the car'];
 let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
 //can get a random number 
-function getRandomElement(arr){
+function getRandom(arr){
   return arr[Math.floor(Math.random()* arr.length)];
 }
 
-//once i have a random number by previos function, generate then 
+//once i have a random number by previous function, then...generate
 function ExcuseGenerator(){
-  let excuse = `${getRandomElement(who)} ${getRandomElement(action)} ${getRandomElement(what)} ${getRandomElement(when)}.`;
+  let excuse = `${getRandom(who)} ${getRandom(action)} ${getRandom(what)} ${getRandom(when)}.`;
               
-  document.getElementById("excuse").innerHTML= excuse;
-}
+  document.getElementById("excuse").innerText= excuse;
+} 
 
 window.onload = function () {
   ExcuseGenerator();
